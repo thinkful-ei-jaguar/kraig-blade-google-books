@@ -5,11 +5,14 @@ class Results extends Component{
 
     
 render(){
-    console.log(this.props.books);
+    console.log(this.props.bookTitle);
 return (
-<div>
-  {/* {this.props.books.length > 0 && <p>{this.props.books[0].volumeInfo.title}</p>} */}
-</div>
+  <div className="results-div">
+    <img src={this.props.bookImage} alt='error loading'/>
+    <h3>Authors: {this.props.bookAuthors}</h3>
+    <p>{this.props.bookTitle}</p>
+    
+  </div>
 
 )
 

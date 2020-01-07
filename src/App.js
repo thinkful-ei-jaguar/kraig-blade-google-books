@@ -37,8 +37,17 @@ class App extends Component {
       <Header />
       <Search handleSubmit={this.handleSubmit} />
       
-      <Results books={this.state.books}
-       /> 
+      {this.state.books ? this.state.books.map((book, index) => {
+        return (
+          <Results 
+          bookTitle={book.volumeInfo.title} 
+          bookImage={book.volumeInfo.imageLinks.smallThumbnail} 
+          bookAuthors={book.volumeInfo.authors}
+          id={index} 
+          key={index}/>
+        )
+      }) : null}
+       
     </div>
   );
    }

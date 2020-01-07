@@ -5,16 +5,20 @@ class Search extends Component{
  
     render(){
         
-        return (
+      return (
     
-    <form onSubmit={this.props.handleSubmit}>
+        <form onSubmit={this.props.handleSubmit}>
 
-        <label htmlFor="search" />
-        <input className="search" id="search" type="text"/>
+            <label htmlFor="search" />
+            <input className="search" id="search" type="text"/>
 
-        <button type="submit" id="search">Search</button>
+            <button type="submit" id="search">Search</button>
 
-    </form>
+            
+
+          
+
+        </form>
 
 )
 

@@ -12,7 +12,7 @@ class App extends Component {
     };
   }
 
-  
+
  
   handleSubmit = (event) => {
     event.preventDefault();
@@ -36,8 +36,9 @@ class App extends Component {
     <div className="App">
       <Header />
       <Search handleSubmit={this.handleSubmit} />
-       {<Results books={this.state.books}
-       /> }
+      
+      <Results books={this.state.books}
+       /> 
     </div>
   );
    }

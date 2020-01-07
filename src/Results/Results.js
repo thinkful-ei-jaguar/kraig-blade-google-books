@@ -8,34 +8,12 @@ render(){
     console.log(this.props.books);
 return (
 <div>
-{/* { this.props.books.length> 1 && <h1>{this.props.books.volumeInfo.title}</h1>} */}
-    
-    
+  {/* {this.props.books.length > 0 && <p>{this.props.books[0].volumeInfo.title}</p>} */}
 </div>
-
-
 
 )
 
-
-
-
-
-
-
-
-
+  }
 }
-
-
-
-
-}
-
-// Results.defaultProps{
-//  books:[]
-
-//   }
-
 
 export default Results
